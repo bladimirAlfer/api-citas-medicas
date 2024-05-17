@@ -4,6 +4,6 @@ WORKDIR /programas/api-citas-medicas
 RUN pip install fastapi pydantic mysql-connector-python passlib python-jose uvicorn
 COPY . .
 EXPOSE 8011
-CMD ["uvicorn", "app_registro:app", "--host", "0.0.0.0", "--port", "8011"]
+CMD ["uvicorn", "app_citas_medicas:app", "--host", "0.0.0.0", "--port", "8011"]
 
 
